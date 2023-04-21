@@ -19,8 +19,10 @@ export default function Story(story) {
         </a>
         |
         <span class="favorite" data-story='${JSON.stringify(story)}'>
-        <img class="heart" src="https://img.icons8.com/fluency/512/hearts.png">
-        ${story.isFavorite ? "Remove From Favorites" : "Add To Favorites"}
+          ${story.isFavorite ? 
+            '<img class="heart" src="https://img.icons8.com/fluency/512/hearts.png">' :  
+            '<img class="heart" src="https://img.icons8.com/plumpy/256/hearts.png">'}
+          ${story.isFavorite ? "Remove From Favorites" : "Add To Favorites"}
         </span>
         </div>
       </div>
